@@ -1,8 +1,10 @@
 package com.example.loginpage
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.annotation.ColorRes
 
 class secondActivity : AppCompatActivity() {
 
@@ -25,6 +27,10 @@ class secondActivity : AppCompatActivity() {
         tvname.text="hello $name"
         tvemail.text="your email is $email"
         tvphone.text="and your phone number is $phone"
+
+        tvname.setTextColor(Color.BLUE)
+        tvemail.setTextColor(Color.BLUE)
+        tvphone.setTextColor(Color.BLUE)
 
     }
 }
